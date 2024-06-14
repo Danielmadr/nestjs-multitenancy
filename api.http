@@ -1,11 +1,33 @@
 GET http://localhost:3000/users
 
-###
+### Create Common User
+
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
   "name": "Daniel Martins",
-  "email": "dan@email.com",
+  "email": "da@email.com",
+  "password": "123456"
+}
+
+### Create Partner User
+
+POST http://localhost:3000/partner/users
+Content-Type: application/json
+
+{
+  "name": "Daniel Martins",
+  "email": "d@email.com",
+  "password": "123456"
+}
+
+### Create Partner User
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "d@email.com",
   "password": "123456"
 }

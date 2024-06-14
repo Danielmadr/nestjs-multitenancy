@@ -4,6 +4,7 @@ node.js
 nest.js
 openssl
 prisma
-docker - docker compose exec db bash
+docker - docker compose up
 image of mysql
 bcrypt
+jwt
