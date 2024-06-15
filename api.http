@@ -1,4 +1,6 @@
-GET http://localhost:3000/users
+GET http://localhost:3000/partners
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwibmFtZSI6IkRhbmllbCBNYXJ0aW5zIiwiZW1haWwiOiJkYUBlbWFpbC5jb20iLCJyb2xlcyI6WyJVc2VyIl0sImNyZWF0ZWRBdCI6IjIwMjQtMDYtMTRUMjE6MzM6MTcuNzgzWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDYtMTRUMjE6MzM6MTcuNzgzWiIsImlhdCI6MTcxODQxMDg3NSwiZXhwIjoxNzE4NDk3Mjc1fQ._AqtrkpwlsBuQE5SibnifvLKgq9D9WBjZRdvJrbPOgY
+//TODO feito apenas para teste e listar os parceiros
 
 ### Create Common User
 
@@ -28,6 +30,16 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-  "email": "d@email.com",
+  "email": "da@email.com",
   "password": "123456"
+}
+
+###
+
+POST http://localhost:3000/partners
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwibmFtZSI6IkRhbmllbCBNYXJ0aW5zIiwiZW1haWwiOiJkYUBlbWFpbC5jb20iLCJyb2xlcyI6WyJVc2VyIl0sImNyZWF0ZWRBdCI6IjIwMjQtMDYtMTRUMjE6MzM6MTcuNzgzWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDYtMTRUMjE6MzM6MTcuNzgzWiIsImlhdCI6MTcxODQxMDg3NSwiZXhwIjoxNzE4NDk3Mjc1fQ._AqtrkpwlsBuQE5SibnifvLKgq9D9WBjZRdvJrbPOgY
+
+{
+  "name": "Santander"
 }
